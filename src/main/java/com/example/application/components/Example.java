@@ -103,4 +103,14 @@ public class Example extends Component {
 
         return addListener(DataChangedEvent.class, listener);
     }
+
+    /**
+     * This is an example of how to call an exposed method from
+     * the Vue.js-based component. See Example.ce.vue for the definition.
+     * Remember that the parameters need to be serializable - just like
+     * props.
+     */
+    public void sayHello(String name) {
+        getElement().callJsFunction("_instance.exposed.sayHello", name);
+    }
 }

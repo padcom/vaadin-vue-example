@@ -278,7 +278,7 @@
   "cookieConsentConnector.js": "cc362ee370ce0a48d6c0f6882a5faf7fefbda89ea7ac9f483b7b4d65eab9cdf5",
   "datepickerConnector.js": "84d25236e1e478c2e181a7881464ad75228a30ccd99d60f78186f0804b6a4a37",
   "dndConnector.js": "9805235aec2ff3302fcd6e65151fcab1c2fb6944d57281b48d4f5e3b3d06ff4e",
-  "example/Example.ce.vue": "472569973482348521e9c408e56620673ea277f46a557e4124c87a5c8c1eee7c",
+  "example/Example.ce.vue": "ee442adce2b5139c87ddf2c13b625e6796189ae8685be0d3e36c2944e1c9a3e1",
   "example/example.js": "4ab9ded9d3e2c7a134fee11f1b64ea147ae3e8984f85a7b63c5b9b7f22a049c2",
   "flow-component-renderer.js": "f45de3d78e4719c2eb7aa09b48ec758e1e44e171cd4ad545ac9e33c3623dcfb1",
   "gridConnector.js": "8c50e6b738bd6028c37253090efade68bfcdef7e96e023ea7c912e31d7979e6f",
@@ -298,7 +298,7 @@
   "flowcrmtutorial": "{\n  \"lumoImports\" : [ \"typography\", \"color\", \"spacing\", \"badge\", \"utility\" ]\n}"
  },
  "entryScripts": [
-  "VAADIN/build/indexhtml-bd9cd927.js"
+  "VAADIN/build/indexhtml-297fc70c.js"
  ],
  "webComponents": [],
  "cvdlModules": {
@@ -333,6 +333,6 @@
  },
  "packageJsonHash": "ec2becebca2442b4c5e22ba3c330f4dcf8bfacacb89e55a2c842e525b64612d5",
  "indexHtmlGenerated": [
-  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-bd9cd927.js\"></script>"
+  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-297fc70c.js\"></script>"
  ]
 }

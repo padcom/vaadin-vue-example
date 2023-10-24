@@ -37,7 +37,7 @@ public class MainView extends VerticalLayout {
         });
 
 
-        var button = new Button("Test me");
+        var button = new Button("Change prop");
         button.addClickListener(e -> {
             // Here we're using the `service` to get
             // some data for serialization
@@ -52,6 +52,9 @@ public class MainView extends VerticalLayout {
             }
         });
 
-        add(example, button);
+        var sayHelloButton = new Button("Say hello (see console!)");
+        sayHelloButton.addClickListener(e -> example.sayHello(example.getValueProperty()));
+
+        add(example, button, sayHelloButton);
     }
 }

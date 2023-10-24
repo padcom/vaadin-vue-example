@@ -63,13 +63,13 @@ const items = computed(() => {
  * This is just a dummy function to show that we can call
  * functions on the custom element.
  */
-function sayHello() {
-  console.log('[FE] Hello, world! from Vue.js')
+function sayHello(name) {
+  console.log('[FE] Hello, world! from Vue.js', name)
 }
 
 /**
  * This is how we make the `sayHello` function available
- * to others for calling
+ * to others for calling via `example._instance.exposed.sayHello()`
  */
 defineExpose({ sayHello })
 </script>
