@@ -1,11 +1,7 @@
-@media all and (max-width: 1100px) {
-  .list-view.editing .toolbar,
-  .list-view.editing .contact-grid {
-    display: none;
-  }
-}
-
-a[highlight] {
-  font-weight: bold;
-  text-decoration: underline;
+example-element {
+  /**
+   * This is how you can use the CSS API defined by the component.
+   * See Example.ce.vue/style section for the definition of this API.
+   */
+  --text-color: purple;
 }

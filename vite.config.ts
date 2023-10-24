@@ -1,12 +1,13 @@
-import { UserConfigFn } from 'vite';
-import { overrideVaadinConfig } from './vite.generated';
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
 
-//import vue from '@vitejs/plugin-vue'
+import { UserConfigFn } from 'vite'
+import { overrideVaadinConfig } from './vite.generated'
 
 const customConfig: UserConfigFn = (env) => ({
   plugins: [
-//    vue()
+    vue()
   ],
-});
+})
 
-export default overrideVaadinConfig(customConfig);
+export default overrideVaadinConfig(customConfig)

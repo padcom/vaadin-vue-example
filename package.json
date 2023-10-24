@@ -83,6 +83,7 @@
     "@rollup/plugin-replace": "5.0.2",
     "@rollup/pluginutils": "5.0.2",
     "@vitejs/plugin-react": "4.0.4",
+    "@vitejs/plugin-vue": "^4.4.0",
     "async": "3.2.4",
     "glob": "10.3.3",
     "rollup-plugin-brotli": "3.1.0",
@@ -192,7 +193,7 @@
       "workbox-core": "7.0.0",
       "workbox-precaching": "7.0.0"
     },
-    "hash": "3528802ccc0a0cc916ed0fe8fafed5b853e5f84c599e9fa068106d9f91aec8d5"
+    "hash": "ec2becebca2442b4c5e22ba3c330f4dcf8bfacacb89e55a2c842e525b64612d5"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",

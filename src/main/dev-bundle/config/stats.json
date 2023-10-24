@@ -148,6 +148,10 @@
   "@vaadin/vaadin-usage-statistics": "2.1.2",
   "@vaadin/vertical-layout": "24.2.0",
   "@vaadin/virtual-list": "24.2.0",
+  "@vue/reactivity": "3.3.6",
+  "@vue/runtime-core": "3.3.6",
+  "@vue/runtime-dom": "3.3.6",
+  "@vue/shared": "3.3.6",
   "construct-style-sheets-polyfill": "3.1.0",
   "cookieconsent": "3.1.1",
   "date-fns": "2.29.3",
@@ -162,6 +166,7 @@
   "rbush": "3.0.1",
   "strip-css-comments": "5.0.0",
   "tslib": "2.3.1",
+  "vue": "3.3.6",
   "wkt-parser": "1.3.3"
  },
  "bundleImports": [
@@ -242,7 +247,6 @@
   "@vaadin/vaadin-lumo-styles/vaadin-iconset.js",
   "@vaadin/vertical-layout/theme/lumo/vaadin-vertical-layout.js",
   "@vaadin/virtual-list/theme/lumo/vaadin-virtual-list.js",
-  "Frontend/example/example.js",
   "Frontend/generated/jar-resources/buttonFunctions.js",
   "Frontend/generated/jar-resources/comboBoxConnector.js",
   "Frontend/generated/jar-resources/contextMenuConnector.js",
@@ -250,6 +254,8 @@
   "Frontend/generated/jar-resources/cookieConsentConnector.js",
   "Frontend/generated/jar-resources/datepickerConnector.js",
   "Frontend/generated/jar-resources/dndConnector.js",
+  "Frontend/generated/jar-resources/example/Example.ce.vue",
+  "Frontend/generated/jar-resources/example/example.js",
   "Frontend/generated/jar-resources/flow-component-renderer.js",
   "Frontend/generated/jar-resources/gridConnector.js",
   "Frontend/generated/jar-resources/gridProConnector.js",
@@ -272,6 +278,8 @@
   "cookieConsentConnector.js": "cc362ee370ce0a48d6c0f6882a5faf7fefbda89ea7ac9f483b7b4d65eab9cdf5",
   "datepickerConnector.js": "84d25236e1e478c2e181a7881464ad75228a30ccd99d60f78186f0804b6a4a37",
   "dndConnector.js": "9805235aec2ff3302fcd6e65151fcab1c2fb6944d57281b48d4f5e3b3d06ff4e",
+  "example/Example.ce.vue": "472569973482348521e9c408e56620673ea277f46a557e4124c87a5c8c1eee7c",
+  "example/example.js": "4ab9ded9d3e2c7a134fee11f1b64ea147ae3e8984f85a7b63c5b9b7f22a049c2",
   "flow-component-renderer.js": "f45de3d78e4719c2eb7aa09b48ec758e1e44e171cd4ad545ac9e33c3623dcfb1",
   "gridConnector.js": "8c50e6b738bd6028c37253090efade68bfcdef7e96e023ea7c912e31d7979e6f",
   "gridProConnector.js": "fc479c2e72c06a5d2c9ef73ac8120a9d6a3f1ef2b16a6fe459cf00a5170d54d4",
@@ -290,7 +298,7 @@
   "flowcrmtutorial": "{\n  \"lumoImports\" : [ \"typography\", \"color\", \"spacing\", \"badge\", \"utility\" ]\n}"
  },
  "entryScripts": [
-  "VAADIN/build/indexhtml-305a16e2.js"
+  "VAADIN/build/indexhtml-bd9cd927.js"
  ],
  "webComponents": [],
  "cvdlModules": {
@@ -323,8 +331,8 @@
    "version": "24.2.0"
   }
  },
- "packageJsonHash": "3528802ccc0a0cc916ed0fe8fafed5b853e5f84c599e9fa068106d9f91aec8d5",
+ "packageJsonHash": "ec2becebca2442b4c5e22ba3c330f4dcf8bfacacb89e55a2c842e525b64612d5",
  "indexHtmlGenerated": [
-  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-305a16e2.js\"></script>"
+  "  <script type=\"module\" crossorigin src=\"./VAADIN/build/indexhtml-bd9cd927.js\"></script>"
  ]
 }
