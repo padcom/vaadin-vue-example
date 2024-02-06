@@ -9,7 +9,10 @@ public class MainView extends VerticalLayout {
     public MainView() {
         var hello = new HelloWorld();
         hello.setName("Jane");
-        hello.addTestEventListener(event -> hello.setName("Marry"));
+        hello.addTestEventListener(event -> {
+            System.out.println(event.getRandomNumber());
+            hello.setName("Marry");
+        });
         add(hello);
     }
 }

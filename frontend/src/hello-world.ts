@@ -3,8 +3,9 @@ import HelloWorld from './HelloWorld.ce.vue'
 
 customElements.define('hello-world', defineCustomElement(HelloWorld))
 
-// customElements.define('hello-world', class extends HTMLElement {
+// class HelloWorld extends HTMLElement {
 //   #root = this.attachShadow({ mode: 'open' })
+//   #name: number | null = null
 
 //   constructor() {
 //     super()
@@ -13,4 +14,14 @@ customElements.define('hello-world', defineCustomElement(HelloWorld))
 //     header.innerHTML = 'Hello, world!'
 //     this.#root.appendChild(header)
 //   }
-// })
+
+//   get name() {
+//     return this.#name
+//   }
+
+//   set name(name: number | null) {
+//     this.#name = name
+//   }
+// }
+
+// customElements.define('hello-world', HelloWorld)
