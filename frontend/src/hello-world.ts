@@ -2,6 +2,9 @@ import { defineCustomElement } from 'vue'
 import HelloWorld from './HelloWorld.ce.vue'
 
 class HelloWorldCE extends defineCustomElement(HelloWorld) {
+  /**
+   *  This defines how to expose a reactive property from a Vue component
+   */
   get value() {
     // @ts-ignore Be advised that `this._instance` is internal Vue API
     // and subject to change but there is no other way to do it at the moment.
@@ -13,6 +16,9 @@ class HelloWorldCE extends defineCustomElement(HelloWorld) {
     return this._instance.exposed.value.value = value;
   }
 
+  /**
+   * Similarly to the reactive property above this is how a function can be exposed
+   */
   sayHello() {
     // @ts-ignore this._instance
     this._instance.exposed.sayHello()

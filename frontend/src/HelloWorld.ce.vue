@@ -17,10 +17,15 @@ defineProps({
 
 const { hostEl } = useHostEl()
 
+// Triggering events that can be handled in the backend.
+// Please note that it needs to be a browser event, not a Vue event
+// so `defineEmits` will not work here
 function triggerBackendEvent() {
   hostEl.value?.dispatchEvent(new CustomEvent('test-event', { detail: { someValue: Math.random() } }))
 }
 
+// Example of how to call backend functions from frontend through the host.$server proxy
+// See hello-world.ts/HelloWorldCE.value (get/set) for how to make it available to the browser
 const result = ref('')
 
 async function formatHelloMessage() {
@@ -33,6 +38,8 @@ async function formatHelloObject() {
   result.value = await hostEl.value?.$server.formatHelloObject('John')
 }
 
+// Example how to expose a reactive property and a method
+// See hello-world.ts/HelloWorldCE.sayHello for how to make it available to the browser
 const value = ref('Default value')
 
 defineExpose({

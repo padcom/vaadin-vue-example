@@ -15,6 +15,7 @@ public class MainView extends VerticalLayout {
             hello.setName("new value is: " + event.getRandomNumber());
             hello.setValue("new value is: " + event.getRandomNumber());
         });
+
         var button = new Button("Say Hello");
         button.addClickListener(event -> {
             // What's happening here is quite extensive so let's re-iterate:
@@ -25,6 +26,7 @@ public class MainView extends VerticalLayout {
             // - the `HelloWorldCE.sayHello` calls the exposed `HelloWorld.ce.vue/sayHello` function
             hello.sayHello();
         });
+
         add(button);
         add(hello);
     }
