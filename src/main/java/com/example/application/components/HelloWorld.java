@@ -15,6 +15,13 @@ import com.vaadin.flow.shared.Registration;
 import elemental.json.Json;
 import elemental.json.JsonValue;
 
+/**
+ * This is the Java side/wrapper of the custom element.
+ *
+ * The @Tag defines what to use when creating DOM elements.
+ * The @JsModule points to a file that contains the actual
+ * definition of the component.
+ */
 @Tag("hello-world")
 @JsModule("./src/hello-world.ts")
 public class HelloWorld extends Component {
