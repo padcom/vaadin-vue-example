@@ -1,7 +1,22 @@
 import { defineCustomElement } from 'vue'
 import HelloWorld from './HelloWorld.ce.vue'
 
-customElements.define('hello-world', defineCustomElement(HelloWorld))
+class HelloWorldCE extends defineCustomElement(HelloWorld) {
+  get value() {
+    // @ts-ignore Be advised that `this._instance` is internal Vue API
+    // and subject to change but there is no other way to do it at the moment.
+    // See https://github.com/vuejs/core/issues/5540 for more information
+    return this._instance.exposed.value.value;
+  }
+  set value(value: string) {
+    // @ts-ignore Be advised that `this._instance` is internal Vue API
+    // and subject to change but there is no other way to do it at the moment.
+    // See https://github.com/vuejs/core/issues/5540 for more information
+    return this._instance.exposed.value.value = value;
+  }
+}
+
+customElements.define('hello-world', HelloWorldCE)
 
 // class HelloWorld extends HTMLElement {
 //   #root = this.attachShadow({ mode: 'open' })

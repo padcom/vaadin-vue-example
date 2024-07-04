@@ -11,7 +11,8 @@ public class MainView extends VerticalLayout {
         hello.setName("Jane");
         hello.addTestEventListener(event -> {
             System.out.println(event.getRandomNumber());
-            hello.setName("Marry");
+            hello.setName("new value is: " + event.getRandomNumber());
+            hello.setValue("new value is: " + event.getRandomNumber());
         });
         add(hello);
     }
