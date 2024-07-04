@@ -9,10 +9,13 @@ class HelloWorldCE extends defineCustomElement(HelloWorld) {
     return this._instance.exposed.value.value;
   }
   set value(value: string) {
-    // @ts-ignore Be advised that `this._instance` is internal Vue API
-    // and subject to change but there is no other way to do it at the moment.
-    // See https://github.com/vuejs/core/issues/5540 for more information
+    // @ts-ignore this._instance
     return this._instance.exposed.value.value = value;
+  }
+
+  sayHello() {
+    // @ts-ignore this._instance
+    this._instance.exposed.sayHello()
   }
 }
 

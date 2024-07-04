@@ -35,7 +35,12 @@ async function formatHelloObject() {
 
 const value = ref('Default value')
 
-defineExpose({ value })
+defineExpose({
+  value,
+  sayHello() {
+    alert('Hello, world!')
+  },
+})
 </script>
 
 <style>

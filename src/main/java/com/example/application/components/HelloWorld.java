@@ -25,6 +25,10 @@ public class HelloWorld extends Component {
         getElement().setProperty("value", value);
     }
 
+    public void sayHello() {
+        getElement().callJsFunction("sayHello");
+    }
+
     public Registration addTestEventListener(ComponentEventListener<TestEvent> listener) {
         return addListener(TestEvent.class, listener);
     }
