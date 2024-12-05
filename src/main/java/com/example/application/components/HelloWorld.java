@@ -45,6 +45,27 @@ public class HelloWorld extends Component {
      */
     private static final PropertyDescriptor<String, String> valueProp = PropertyDescriptors.propertyWithDefault("value", "William");
 
+
+    /**
+     * Vaadin, when reading a property value using either getElement().getProperty(name)
+     * or using the PropertyDescriptor class only reads the server-side value and returns it.
+     * This means that there is no way (at least I didn't find any) to refresh that value
+     * from the frontend component.
+     *
+     * This means that if e.g. we have a zoom property that can be modified using zoomIn()
+     * and zoomOut() methods, Vaadin will not know it changed.
+     *
+     * In order to make Vaadin notice this kind of change the component needs to emit an event
+     * and notify the backend of that change. This, however, will not make the zoom property
+     * in the backend update automatically (or at least I didn't find a wait to do it
+     * automatically). It's just a way for the user of the component wrapper to get the latest
+     * information.
+     *
+     * Somehow it does make sense, because constant update of all properties in the backend
+     * makes little sense as Vaadin will not know about the dependency between zoomIn/Out and
+     * the zoom property. But it is annoying as hell that they don't read the value from
+     * the FE component, just from the state stored in the backend...
+     */
     public String getValue() {
         log.info("Getting value as String using `PropertyDescriptor.get()`");
 
